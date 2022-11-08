@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Drawing Diary</string>
+    <string name="rateus">Rate us</string>
+    <string name="menu_settings">Settings</string>
+</resources>

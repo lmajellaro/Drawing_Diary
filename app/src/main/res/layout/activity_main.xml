@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fitsSystemWindows="true"
+android:orientation="vertical"
+    tools:context="drawingDiary.brainlatch.com.drawingDiary.MainActivity"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_above="@+id/footerLayout">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        android:weightSum="1"
+        android:theme="@style/ToolbarTheme">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/shopping"
+                android:text="@string/app_name"
+                android:textColor="@android:color/white"
+                android:textSize="25sp" />
+
+            <Spinner
+                android:id="@+id/spinner_settings"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/delete_custom_prompt"
+                android:layout_toStartOf="@+id/delete_custom_prompt"
+                android:background="@drawable/my_calendar_icon" />
+
+            <ImageButton
+                android:id="@+id/delete_custom_prompt"
+                android:onClick="onClickdeleteCustomPrompt"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/transparent"
+                android:src="@android:drawable/ic_menu_delete" />
+
+            <ImageButton
+                android:id="@+id/shopping"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="-30dp"
+                android:layout_marginTop="0dp"
+                android:layout_toLeftOf="@+id/spinner_settings"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_shopping" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/list_todo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+</LinearLayout>
+    <LinearLayout
+        android:id="@+id/footerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:adSize="SMART_BANNER"
+            app:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView
+            >
+    </LinearLayout>
+</RelativeLayout>
+
+

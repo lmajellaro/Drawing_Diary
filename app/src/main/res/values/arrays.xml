@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="prompts">
+        <item>(Ink)tober 2016</item>
+        <item>(Ink)tober 2017</item>
+        <item>(Ink)tober 2018</item>
+        <item>(Hue)vember</item>
+        <item>(Dino)vember</item>
+        <item>Random</item>
+        <item>Christmas</item>
+        <item>Creatury</item>
+<!--        <item>Marmaid</item>
+        <item>Rain</item>
+        <item>Mithical Creatures</item>
+        <item>Fairies</item>
+        <item>Robots</item>-->
+    </string-array>
+
+    <string-array name="tableNames">
+        <item>Inktober2016</item>
+        <item>Inktober2017</item>
+        <item>Inktober2018</item>
+        <item>SingleHue</item>
+        <item>Dinosaurs</item>
+        <item>Random</item>
+        <item>Xmas</item>
+        <item>Creatury</item>
+        <!--        <item>Marmaid</item>
+                <item>Rain</item>
+                <item>Mithical Creatures</item>
+                <item>Fairies</item>
+                <item>Robots</item>-->
+    </string-array>
+
+    <string-array name="ink_prompts">
+        <item>(Ink)tober 2016</item>
+        <item>(Ink)tober 2017</item>
+        <item>(Ink)tober 2018</item>
+    </string-array>
+
+    <string-array name="ink_tableNames">
+        <item>Inktober2016</item>
+        <item>Inktober2017</item>
+        <item>Inktober2018</item>
+    </string-array>
+
+</resources>

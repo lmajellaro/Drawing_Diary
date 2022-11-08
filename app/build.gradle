@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '29.0.2'
+    defaultConfig {
+        applicationId "drawingDiary.brainlatch.com.drawingDiary"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 26
+        versionName "2.1.2"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.github.amlcurran.showcaseview:library:5.4.3'
+    implementation 'com.google.android.gms:play-services-ads:19.5.0'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.5'
+    def billing_version = "3.0.0"
+    implementation "com.android.billingclient:billing:$billing_version"
+}
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '25.3.0'
+            }
+        }
+    }
+}

@@ -7,7 +7,7 @@
 alt="The Challenge of the Month: Drawing Diary " width="480" height="360" border="10" /></a>
 </p>    
 
-[Google Play Page](https://play.google.com/store/apps/details?id=drawingDiary.brainlatch.com.drawingDiary&hl=en_IE&gl=US&pli=1).    
+[Google Play Page](https://play.google.com/store/apps/details?id=drawingDiary.brainlatch.com.drawingDiary&hl=en_IE&gl=US&pli=1)    
 
 ## Summary.   
 This app was created back in 2017 with the idea to provide a tool for artists to practice their skill on the go.

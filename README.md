@@ -19,13 +19,22 @@ First release date: 28 Sept 2017.
 Last released update: 18 Nov 2020.    
 Tested on: Android 11 (API level 30).   
 
-## Features.    
+## Features.
+- Pick one of the preloaded prompts and train your drawing skills every day following the suggested topic for the day.  
+- Create new custom prompts.   
+- Add notes, comments and ideas to the sketch of the day.   
+- Take a picture of your sketch to archive it or share it on instagram.  
+- Keep track of your monthly progresses.    
+
+## Specs
 Main UI elements: Drop down menus, spinner menus, checkboxes, images, gallery.    
 Databases: SQLite.    
 Integrations/Permissions:     
 - Device camera.    
 - Device storage.    
-- Instagram via API (if installed on the device).    
+- Instagram via API (if installed on the device).
+- Google Admob (banners, interstitials)
+- In-app purchase (Ads free)
 
 ## Additional Notes.    
 You might need to tweak the build.gradle file and gradle.properties to build the application properly due to possible deprecated packages.     

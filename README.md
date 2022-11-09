@@ -1,5 +1,6 @@
+<center>C
 # The Challenge of the Month: Drawing Diary.    
-
+</center>
 
 <p align="center">
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=3zuPS-g1reQ

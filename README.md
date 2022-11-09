@@ -12,7 +12,7 @@ alt="The Challenge of the Month: Drawing Diary " width="480" height="360" border
 
 ## Summary   
 This app was created back in 2017 with the purpose of providing a tool for artists to practice their skill on the go.
-The application provides several training prompts plus the possibility to create custom prompts, take a picture of the results sketches and share them on instagram.    
+The application provides several training prompts plus the possibility to create custom prompts, take a picture and archive sketches and share them on instagram.    
      
 At the time of the first release there were just a few apps of this type while at the time of this writing (2022) the market is flooded with many alternative options offering a wide broad of features.     
 

@@ -11,12 +11,12 @@ alt="The Challenge of the Month: Drawing Diary " width="480" height="360" border
 </p> 
 
 # Table of Contents
-1. [Summary](##Summary)
-2. [Info](##Info)
-3. [Features](##Features)
-4. [Specs](##Specs)
-5. [How to import and build in Android Studio](##How-to-import-and-build-in-Android-Studio)
-6. [Additional Notes](##Additional-Notes)
+1. [Summary](#Summary)
+2. [Info](#Info)
+3. [Features](#Features)
+4. [Specs](#Specs)
+5. [How to import and build in Android Studio](#How-to-import-and-build-in-Android-Studio)
+6. [Additional Notes](#Additional-Notes)
 
 ## Summary   
 This app was created back in 2017 with the purpose of providing a tool for artists to practice their skill on the go.
@@ -56,7 +56,7 @@ Integrations/Permissions:
     - Locate the uncompressed folder and select the *app* folder
     - Click ok
     - From the Run menu, select Run 'app'
-    - The application will be built and run within the emulator if configured within Android studio
+    - The application will be built and run within the emulator (if configured in Android Studio)
     - To add a new emulated device:
          - Open *SDK Manager*
          - Select an Android SDK (e.g. Android 11.0 (R)

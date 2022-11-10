@@ -59,7 +59,7 @@ Integrations/Permissions:
     - The application will be built and run within the emulator (if configured in Android Studio)
     - To add a new emulated device:
          - Open *SDK Manager*
-         - Select an Android SDK (e.g. Android 11.0 (R)
+         - Select an Android SDK (e.g. Android 11.0 (R))
          - Click apply and install the selected SDK
          - Open *AVD Manager*
          - Select *Create Virtual Device*

@@ -10,6 +10,14 @@ alt="The Challenge of the Month: Drawing Diary " width="480" height="360" border
 <a href="https://play.google.com/store/apps/details?id=drawingDiary.brainlatch.com.drawingDiary&hl=en_IE&gl=US&pli=1">View the Google Play Page </a> 
 </p> 
 
+# Table of Contents
+1. [Summary](##Summary)
+2. [Info](##Info)
+3. [Features](##Features)
+4. [Specs](##Specs)
+5. [How to import and build in Android Studio](##How-to-import-and-build-in-Android-Studio)
+6. [Additional Notes](##Additional-Notes)
+
 ## Summary   
 This app was created back in 2017 with the purpose of providing a tool for artists to practice their skill on the go.
 The application provides several training prompts plus the possibility to create custom prompts, take a picture and archive sketches and share them on instagram.    
@@ -38,6 +46,26 @@ Integrations/Permissions:
 - Instagram via API (if installed on the device).
 - Google Admob (banners, interstitials)
 - In-app purchase (Ads free)
+
+## How to import and build in Android Studio
+(Updated 10.11.2022)
+- Donwload the zip package from Github to your local disk
+- Uncompress the file 
+- On Android Studio:
+    - Click on File -> Open
+    - Locate the uncompressed folder and select the *app* folder
+    - Click ok
+    - From the Run menu, select Run 'app'
+    - The application will be built and run within the emulator if configured within Android studio
+    - To add a new emulated device:
+         - Open *SDK Manager*
+         - Select an Android SDK (e.g. Android 11.0 (R)
+         - Click apply and install the selected SDK
+         - Open *AVD Manager*
+         - Select *Create Virtual Device*
+         - Pick up a device (e.g. Phone -> Pixel XL)
+         
+In case of errors during the build, you would probably need to update some of the packages used in the build.gradle file or some properties in the gradle.properties file
 
 ## Additional Notes   
 You might need to tweak the build.gradle file and gradle.properties to build the application properly due to possible deprecated packages.     
